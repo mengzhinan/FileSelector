@@ -1,0 +1,7 @@
+<resources>
+    <string name="dfileselector_module_name">文件选择器</string>
+    <string name="dfileselector_folder_item">项</string>
+    <string name="dfileselector_file_back">上一级</string>
+    <string name="dfileselector_file_submit">确定</string>
+    <string name="dfileselector_file_no_documents">没有文件</string>
+</resources>

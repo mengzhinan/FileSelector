@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/head_root"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dfileselector_common_head_height"
+    android:background="@color/color_EEEEEE"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/dfileselector_common_margin"
+    android:paddingRight="@dimen/dfileselector_common_margin">
+
+    <TextView
+        android:id="@+id/head_path_text_view"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:ellipsize="marquee"
+        android:gravity="left|center_vertical"
+        android:singleLine="true"
+        android:text="路径" />
+
+    <TextView
+        android:id="@+id/head_back_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/dfileselector_head_upper_level_selector"
+        android:drawableLeft="@drawable/dfileselector_icon_folder_back_step"
+        android:gravity="center"
+        android:maxHeight="@dimen/dfileselector_common_head_height"
+        android:text="@string/dfileselector_file_back" />
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/file_head_top_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginLeft="@dimen/dfileselector_common_margin"
+        android:layout_marginRight="@dimen/dfileselector_common_margin"
+        android:background="@color/color_CCCCCC"
+        android:visibility="gone" />
+
+    <include layout="@layout/dfileselector_head_bar" />
+
+    <View
+        android:id="@+id/file_head_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginLeft="@dimen/dfileselector_common_margin"
+        android:layout_marginRight="@dimen/dfileselector_common_margin"
+        android:background="@color/color_CCCCCC"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.duke.dfileselector.widget.FileRecyclerView
+            android:id="@+id/file_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/file_empty_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableTop="@drawable/dfileselector_icon_folder_empty"
+            android:gravity="center"
+            android:text="@string/dfileselector_file_no_documents"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/file_submit_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dfileselector_common_head_height"
+        android:background="@drawable/dfileselector_bottom_submit_selector"
+        android:gravity="center"
+        android:text="@string/dfileselector_file_submit"
+        android:visibility="gone" />
+</LinearLayout>

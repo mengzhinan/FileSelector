@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_FFFFFF">#FFFFFF</color>
+    <color name="color_CCCCCC">#CCCCCC</color>
+    <color name="color_transparent">@android:color/transparent</color>
+    <color name="color_EEEEEE">#EEEEEE</color>
+
+    <!--item内部第二行文本分割线颜色-->
+    <color name="dfileselector_file_item_split_line_color">@color/color_CCCCCC</color>
+
+    <!--item bg 颜色-->
+    <color name="dfileselector_file_item_bg_default">@color/color_FFFFFF</color>
+    <color name="dfileselector_file_item_bg_press">@color/color_CCCCCC</color>
+
+    <!--上一层级按钮背景-->
+    <color name="dfileselector_file_upper_level_bg_default">@color/color_transparent</color>
+    <color name="dfileselector_file_upper_level_item_bg_press">@color/color_CCCCCC</color>
+
+    <!--提交按钮背景-->
+    <color name="dfileselector_file_submit_button_bg_default">@color/color_EEEEEE</color>
+    <color name="dfileselector_file_submit_button_bg_press">@color/color_CCCCCC</color>
+</resources>

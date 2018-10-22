@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dfileselector_module_name">DFileSelector</string>
+    <string name="dfileselector_folder_item">Item</string>
+    <string name="dfileselector_file_back">Upper level</string>
+    <string name="dfileselector_file_submit">OK</string>
+    <string name="dfileselector_file_no_documents">No documents</string>
+</resources>
