@@ -13,10 +13,10 @@
     本例是使用模拟器运行的效果，更好的效果请使用真机运行查看
 
 ## 先来看效果
-### 单选模式
+    单选模式
 ![](https://github.com/mengzhinan/FileSelector/blob/master/snapshot/a1.gif "单选模式效果")
 
-### 多选模式
+    多选模式
 ![](https://github.com/mengzhinan/FileSelector/blob/master/snapshot/a2.gif "多选模式效果")
 
 偷个懒，给你指个路 -> <br/>
