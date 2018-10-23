@@ -20,8 +20,8 @@
 ![](https://github.com/mengzhinan/FileSelector/blob/master/snapshot/a2.gif "多选模式效果")
 
 偷个懒，给你指个路 -> <br/>
-    --> [使用示例代码1](https://github.com/mengzhinan/FileSelector/blob/master/app/src/main/java/com/duke/fileselector/Demo1Activity.java "点击进入")
+--> [使用示例代码1](https://github.com/mengzhinan/FileSelector/blob/master/app/src/main/java/com/duke/fileselector/Demo1Activity.java "点击进入")
 
-    --> [使用示例代码1](https://github.com/mengzhinan/FileSelector/blob/master/app/src/main/java/com/duke/fileselector/Demo2Activity.java "点击进入")
+--> [使用示例代码1](https://github.com/mengzhinan/FileSelector/blob/master/app/src/main/java/com/duke/fileselector/Demo2Activity.java "点击进入")
 
-    --> [使用示例代码1](https://github.com/mengzhinan/FileSelector/blob/master/app/src/main/java/com/duke/fileselector/Demo3Activity.java "点击进入")
+--> [使用示例代码1](https://github.com/mengzhinan/FileSelector/blob/master/app/src/main/java/com/duke/fileselector/Demo3Activity.java "点击进入")
