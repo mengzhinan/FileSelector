@@ -7,7 +7,16 @@
   确实，其功能对于修养多年的大神来说太简单了。其核心代码就是一个 RecyclerView 和一个 Adapter，已扩展存储中的文件作为数据。但是我提供了高度可定制化 UI 效果的功能，好戏后面见。
   
 
-## 先来看效果
-### 效果1，直接使用 DFileSelector 提供的 Activity 打开选择器。
-![](https://github.com/mengzhinan/FileSelector/blob/master/snapshot/a1.gif "使用默认的Activity打开选择器")
+## 先来看效果（本例是使用模拟器运行的效果，更好的效果请使用真机运行查看）
+### 单选模式
+![](https://github.com/mengzhinan/FileSelector/blob/master/snapshot/a1.gif "单选模式效果")
 
+### 多选模式
+![](https://github.com/mengzhinan/FileSelector/blob/master/snapshot/a2.gif "多选模式效果")
+
+偷个懒，给你指个路 -> <br/>
+--> [使用示例代码1](https://github.com/mengzhinan/FileSelector/blob/master/app/src/main/java/com/duke/fileselector/Demo1Activity.java "点击进入")
+
+--> [使用示例代码1](https://github.com/mengzhinan/FileSelector/blob/master/app/src/main/java/com/duke/fileselector/Demo2Activity.java "点击进入")
+
+--> [使用示例代码1](https://github.com/mengzhinan/FileSelector/blob/master/app/src/main/java/com/duke/fileselector/Demo3Activity.java "点击进入")
