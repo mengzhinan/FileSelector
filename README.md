@@ -39,110 +39,110 @@
     
     具体细节可以参考下面的代码简报
 
-FileSelector.with(fileSelectorLayout)
-                .listen(onFileSelectListener)
-                .setItemParameter(ItemParameter.with(fileSelectorLayout.getContext())
-                                .setTitleTextSize(R.dimen.sp_20)
-//                                .setTitleTextColor(Color.RED)
-//                                .setTitleTextBold(true)
-//                                .setImageWidth(R.dimen.dp_50)
-//                                .setImageHeight(R.dimen.dp_50)
-//                                .setImageMarginRight(R.dimen.dp_50)
-//                                .setCountTextColor(Color.RED)
-//                                .setCountTextSize(R.dimen.sp_20)
-//                                .setCountTextBold(true)
-//                                .setDateTextSize(R.dimen.sp_20)
-//                                .setDateTextColor(Color.RED)
-//                                .setDateTextBold(true)
-//                                .setLayoutBackgroundColor(Color.RED)
-//                                .setLayoutPadding(R.dimen.dp_1, R.dimen.dp_1, R.dimen.dp_1, R.dimen.dp_1)
-//                                .setSplitLineColor(Color.RED)
-//                                .setSplitLineHeight(R.dimen.dp_10)
-//                                .setSplitLineWidth(R.dimen.dp_10)
-//                                .setSplitLineMarginLeft(R.dimen.dp_50)
-//                                .setSplitLineMarginRight(R.dimen.dp_50)
-                )
-                .setMultiSelectionModel(true)
-//                .setMultiModelMaxSize(3)
-//                .setMultiModelToast(true, "最多只能选择3个文件")
-//                .setFileSizeProvide(FileSizeProvide fileSizeProvide)
-//                .setFileIconProvide(FileIconProvide fileIconProvide)
-//                .setFileDateProvide(FileDateProvide fileDateProvide)
-//                .setFileFilter(FileFilter fileFilter)
-//                .setFileOrderProvide(FileOrderProvide fileOrderProvide)
-//                .setHeadTopLineVisibility(View.VISIBLE)
-//                .setHeadTopLineColor(Color.RED)
-//                .setHeadTopLineHeight(R.dimen.dp_30)
-//                .setHeadTopLineHeightDP(30)
-//                .setHeadTopLineHeightPX(30)
-//                .setHeadTopLineMargin(R.dimen.dp_10, R.dimen.dp_10,R.dimen.dp_10,R.dimen.dp_10)
-//                .setHeadTopLineMarginDP(10,10,10,10)
-//                .setHeadTopLineMarginPX(10,10,10,10)
-//                .setHeadBottomLineVisibility(View.VISIBLE)
-//                .setHeadBottomLineColor(@ColorInt int color)
-//                .setHeadBottomLineHeight(@DimenRes int resId)
-//                .setHeadBottomLineHeightDP(float dpHeight)
-//                .setHeadBottomLineHeightPX(float pxHeight)
-//                .setHeadBottomLineMargin(@DimenRes int leftDimenRes, @DimenRes int topDimenRes, @DimenRes int rightDimenRes, @DimenRes int bottomDimenRes)
-//                .setHeadBottomLineMarginDP(float leftDP, float topDP, float rightDP, float bottomDP)
-//                .setHeadBottomLineMarginPX(float leftPX, float topPX, float rightPX, float bottomPX)
-//                .setHeadRootHeight(R.dimen.dp_40)
-//                .setHeadRootHeightDP(40)
-//                .setHeadRootHeightPX(120)
-//                .setHeadRootPadding(R.dimen.dp_20,R.dimen.dp_1,R.dimen.dp_30,R.dimen.dp_1)
-//                .setHeadRootPaddingDP(float leftDP, float topDP, float rightDP, float bottomDP)
-//                .setHeadRootPaddingPX(float leftPX, float topPX, float rightPX, float bottomPX)
-//                .setHeadRootBackgroundColor(Color.RED)
-//                .setHeadRootBackgroundResource(@DrawableRes int resId)
-//                .setHeadLeftTextSize(R.dimen.sp_20)
-//                .setHeadLeftTextSizePX(60)
-//                .setHeadLeftTextSizeSP(20)
-//                .setHeadLeftTextColor(Color.RED)
-//                .setHeadLeftTextColor(ColorStateList colors)
-//                .setHeadLeftTextBold(true)
-//                .setHeadLeftTextEllipsize(TextUtils.TruncateAt.MARQUEE)
-//                .setHeadRightImage(Drawable leftDrawable)
-//                .setHeadRightImageDP(Drawable leftDrawable, float widthDP, float heightDP)
-//                .setHeadRightImagePX(Drawable leftDrawable, float widthPX, float heightPX)
-//                .setHeadRightText(@StringRes int resId)
-//                .setHeadRightText("上一级")
-//                .setHeadRightTextSize(@DimenRes int resId)
-//                .setHeadRightTextSizePX(float px)
-//                .setHeadRightTextSizeSP(20)
-//                .setHeadRightTextColor(Color.RED)
-//                .setHeadRightTextColor(ColorStateList colors)
-//                .setHeadRightTextBold(true)
-//                .setHeadRightTextBackgroundColor(Color.RED)
-//                .setHeadRightTextBackgroundResource(@DrawableRes int resId)
-//                .setRecyclerViewLineDecoration(RecyclerView.ItemDecoration itemDecoration)
-//                .setRecyclerViewLineColorHeight(Color.RED, R.dimen.dp_1, R.dimen.dp_5)
-//                .setRecyclerViewLineColorHeightDP(@ColorInt int color, float heightDP, float marginDP)
-//                .setRecyclerViewLineColorHeightPX(@ColorInt int color, float heightPX, float marginPX)
-//                .setRecyclerViewBackgroundColor(Color.GRAY)
-//                .setRecyclerViewBackgroundResource(@DrawableRes int resId)
-//                .setEmptyText(@StringRes int resId)
-//                .setEmptyText("无数据")
-//                .setEmptyTextColor(Color.RED)
-//                .setEmptyTextColor(ColorStateList colors)
-//                .setEmptyTextSize(@DimenRes int resId)
-//                .setEmptyTextSizePX(float px)
-//                .setEmptyTextSizeSP(float sp)
-//                .setEmptyTopImage(@DrawableRes int topDrawableResId)
-//                .setEmptyTopImage(Drawable topDrawable)
-//                .setEmptyTopImage(@DrawableRes int topDrawableResId, @DimenRes int widthResId, @DimenRes int heightResId)
-//                .setEmptyTopImageDP(Drawable topDrawable, float widthDP, float heightDP)
-//                .setEmptyTopImagePX(Drawable topDrawable, float widthPX, float heightPX)
-//                .setSubmitTextViewHeight(@DimenRes int resId)
-//                .setSubmitTextViewHeightDP(float dpHeight)
-//                .setSubmitTextViewHeightPX(float pxHeight)
-//                .setSubmitText(@StringRes int resId)
-//                .setSubmitText("ok")
-//                .setSubmitTextColor(@ColorInt int color)
-//                .setSubmitTextColor(ColorStateList colors)
-//                .setSubmitTextSize(@DimenRes int resId)
-//                .setSubmitTextSizePX(float px)
-//                .setSubmitTextSizeSP(float sp)
-//                .setSubmitTextBold(boolean isBold)
-//                .setSubmitViewBackgroundColor(Color.RED)
-//                .setSubmitViewBackgroundResource(@DrawableRes int resId)
-                .setup();
+FileSelector.with(fileSelectorLayout) <br/>
+                .listen(onFileSelectListener) <br/>
+                .setItemParameter(ItemParameter.with(fileSelectorLayout.getContext()) <br/>
+                                .setTitleTextSize(R.dimen.sp_20) <br/>
+//                                .setTitleTextColor(Color.RED) <br/>
+//                                .setTitleTextBold(true) <br/>
+//                                .setImageWidth(R.dimen.dp_50) <br/>
+//                                .setImageHeight(R.dimen.dp_50) <br/>
+//                                .setImageMarginRight(R.dimen.dp_50) <br/>
+//                                .setCountTextColor(Color.RED) <br/>
+//                                .setCountTextSize(R.dimen.sp_20) <br/>
+//                                .setCountTextBold(true) <br/>
+//                                .setDateTextSize(R.dimen.sp_20) <br/>
+//                                .setDateTextColor(Color.RED) <br/>
+//                                .setDateTextBold(true) <br/>
+//                                .setLayoutBackgroundColor(Color.RED) <br/>
+//                                .setLayoutPadding(R.dimen.dp_1, R.dimen.dp_1, R.dimen.dp_1, R.dimen.dp_1) <br/>
+//                                .setSplitLineColor(Color.RED) <br/>
+//                                .setSplitLineHeight(R.dimen.dp_10) <br/>
+//                                .setSplitLineWidth(R.dimen.dp_10) <br/>
+//                                .setSplitLineMarginLeft(R.dimen.dp_50) <br/>
+//                                .setSplitLineMarginRight(R.dimen.dp_50) <br/>
+                ) <br/>
+                .setMultiSelectionModel(true) <br/>
+//                .setMultiModelMaxSize(3) <br/>
+//                .setMultiModelToast(true, "最多只能选择3个文件") <br/>
+//                .setFileSizeProvide(FileSizeProvide fileSizeProvide) <br/>
+//                .setFileIconProvide(FileIconProvide fileIconProvide) <br/>
+//                .setFileDateProvide(FileDateProvide fileDateProvide) <br/>
+//                .setFileFilter(FileFilter fileFilter) <br/>
+//                .setFileOrderProvide(FileOrderProvide fileOrderProvide) <br/>
+//                .setHeadTopLineVisibility(View.VISIBLE) <br/>
+//                .setHeadTopLineColor(Color.RED) <br/>
+//                .setHeadTopLineHeight(R.dimen.dp_30) <br/>
+//                .setHeadTopLineHeightDP(30) <br/>
+//                .setHeadTopLineHeightPX(30) <br/>
+//                .setHeadTopLineMargin(R.dimen.dp_10, R.dimen.dp_10,R.dimen.dp_10,R.dimen.dp_10) <br/>
+//                .setHeadTopLineMarginDP(10,10,10,10) <br/>
+//                .setHeadTopLineMarginPX(10,10,10,10) <br/>
+//                .setHeadBottomLineVisibility(View.VISIBLE) <br/>
+//                .setHeadBottomLineColor(@ColorInt int color) <br/>
+//                .setHeadBottomLineHeight(@DimenRes int resId) <br/>
+//                .setHeadBottomLineHeightDP(float dpHeight) <br/>
+//                .setHeadBottomLineHeightPX(float pxHeight) <br/>
+//                .setHeadBottomLineMargin(@DimenRes int leftDimenRes, @DimenRes int topDimenRes, @DimenRes int rightDimenRes, @DimenRes int bottomDimenRes) <br/>
+//                .setHeadBottomLineMarginDP(float leftDP, float topDP, float rightDP, float bottomDP) <br/>
+//                .setHeadBottomLineMarginPX(float leftPX, float topPX, float rightPX, float bottomPX) <br/>
+//                .setHeadRootHeight(R.dimen.dp_40) <br/>
+//                .setHeadRootHeightDP(40) <br/>
+//                .setHeadRootHeightPX(120) <br/>
+//                .setHeadRootPadding(R.dimen.dp_20,R.dimen.dp_1,R.dimen.dp_30,R.dimen.dp_1) <br/>
+//                .setHeadRootPaddingDP(float leftDP, float topDP, float rightDP, float bottomDP) <br/>
+//                .setHeadRootPaddingPX(float leftPX, float topPX, float rightPX, float bottomPX) <br/>
+//                .setHeadRootBackgroundColor(Color.RED) <br/>
+//                .setHeadRootBackgroundResource(@DrawableRes int resId) <br/>
+//                .setHeadLeftTextSize(R.dimen.sp_20) <br/>
+//                .setHeadLeftTextSizePX(60) <br/>
+//                .setHeadLeftTextSizeSP(20) <br/>
+//                .setHeadLeftTextColor(Color.RED) <br/>
+//                .setHeadLeftTextColor(ColorStateList colors) <br/>
+//                .setHeadLeftTextBold(true) <br/>
+//                .setHeadLeftTextEllipsize(TextUtils.TruncateAt.MARQUEE) <br/>
+//                .setHeadRightImage(Drawable leftDrawable) <br/>
+//                .setHeadRightImageDP(Drawable leftDrawable, float widthDP, float heightDP) <br/>
+//                .setHeadRightImagePX(Drawable leftDrawable, float widthPX, float heightPX) <br/>
+//                .setHeadRightText(@StringRes int resId) <br/>
+//                .setHeadRightText("上一级") <br/>
+//                .setHeadRightTextSize(@DimenRes int resId) <br/>
+//                .setHeadRightTextSizePX(float px) <br/>
+//                .setHeadRightTextSizeSP(20) <br/>
+//                .setHeadRightTextColor(Color.RED) <br/>
+//                .setHeadRightTextColor(ColorStateList colors) <br/>
+//                .setHeadRightTextBold(true) <br/>
+//                .setHeadRightTextBackgroundColor(Color.RED) <br/>
+//                .setHeadRightTextBackgroundResource(@DrawableRes int resId) <br/>
+//                .setRecyclerViewLineDecoration(RecyclerView.ItemDecoration itemDecoration) <br/>
+//                .setRecyclerViewLineColorHeight(Color.RED, R.dimen.dp_1, R.dimen.dp_5) <br/>
+//                .setRecyclerViewLineColorHeightDP(@ColorInt int color, float heightDP, float marginDP) <br/>
+//                .setRecyclerViewLineColorHeightPX(@ColorInt int color, float heightPX, float marginPX) <br/>
+//                .setRecyclerViewBackgroundColor(Color.GRAY) <br/>
+//                .setRecyclerViewBackgroundResource(@DrawableRes int resId) <br/>
+//                .setEmptyText(@StringRes int resId) <br/>
+//                .setEmptyText("无数据") <br/>
+//                .setEmptyTextColor(Color.RED) <br/>
+//                .setEmptyTextColor(ColorStateList colors) <br/>
+//                .setEmptyTextSize(@DimenRes int resId) <br/>
+//                .setEmptyTextSizePX(float px) <br/>
+//                .setEmptyTextSizeSP(float sp) <br/>
+//                .setEmptyTopImage(@DrawableRes int topDrawableResId) <br/>
+//                .setEmptyTopImage(Drawable topDrawable) <br/>
+//                .setEmptyTopImage(@DrawableRes int topDrawableResId, @DimenRes int widthResId, @DimenRes int heightResId) <br/>
+//                .setEmptyTopImageDP(Drawable topDrawable, float widthDP, float heightDP) <br/>
+//                .setEmptyTopImagePX(Drawable topDrawable, float widthPX, float heightPX) <br/>
+//                .setSubmitTextViewHeight(@DimenRes int resId) <br/>
+//                .setSubmitTextViewHeightDP(float dpHeight) <br/>
+//                .setSubmitTextViewHeightPX(float pxHeight) <br/>
+//                .setSubmitText(@StringRes int resId) <br/>
+//                .setSubmitText("ok") <br/>
+//                .setSubmitTextColor(@ColorInt int color) <br/>
+//                .setSubmitTextColor(ColorStateList colors) <br/>
+//                .setSubmitTextSize(@DimenRes int resId) <br/>
+//                .setSubmitTextSizePX(float px) <br/>
+//                .setSubmitTextSizeSP(float sp) <br/>
+//                .setSubmitTextBold(boolean isBold) <br/>
+//                .setSubmitViewBackgroundColor(Color.RED) <br/>
+//                .setSubmitViewBackgroundResource(@DrawableRes int resId) <br/>
+                .setup(); <br/>
