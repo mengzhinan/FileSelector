@@ -2,109 +2,109 @@
 FileSelector.with(fileSelectorLayout)
                 .listen(onFileSelectListener) // 设置文件选中回调
                 .setItemParameter(ItemParameter.with(fileSelectorLayout.getContext())// 设置列表 item 的各种属性样式
-                                .setTitleTextSize(R.dimen.sp_20)            // 设置 item 文件名字体大小
-//                                .setTitleTextColor(Color.RED)             // 设置 item 文件名字体颜色
-//                                .setTitleTextBold(true)                   // 设置 item 文件名字体粗细
-//                                .setImageWidth(R.dimen.dp_50)             // 设置 item 文件扩展类型图片宽度
-//                                .setImageHeight(R.dimen.dp_50)            // 设置 item 文件扩展类型图片高度
-//                                .setImageMarginRight(R.dimen.dp_50)       // 设置 item 文件扩展类型图片右边间距
-//                                .setCountTextColor(Color.RED)             // 设置 item 文件个数字体颜色
-//                                .setCountTextSize(R.dimen.sp_20)          // 设置 item 文件个数字体大小
-//                                .setCountTextBold(true)                   // 设置 item 文件个数字体粗细
-//                                .setDateTextSize(R.dimen.sp_20)           // 设置 item 文件日期字体大小
-//                                .setDateTextColor(Color.RED)              // 设置 item 文件日期字体颜色
-//                                .setDateTextBold(true)                    // 设置 item 文件日期字体粗细
-//                                .setLayoutBackgroundColor(Color.RED)      // 设置 item 背景颜色
-//                                .setLayoutPadding(R.dimen.dp_1, R.dimen.dp_1, R.dimen.dp_1, R.dimen.dp_1) // 设置 item 边距
-//                                .setSplitLineColor(Color.RED)             // 设置 item 的文件个数与日期之间分割线的颜色
-//                                .setSplitLineHeight(R.dimen.dp_10)        // 设置 item 的文件个数与日期之间分割线的高度
-//                                .setSplitLineWidth(R.dimen.dp_10)         // 设置 item 的文件个数与日期之间分割线的宽度
-//                                .setSplitLineMarginLeft(R.dimen.dp_50)    // 设置 item 的文件个数与日期之间分割线的左间距
-//                                .setSplitLineMarginRight(R.dimen.dp_50)   // 设置 item 的文件个数与日期之间分割线的右间距
+                                .setTitleTextSize(R.dimen.sp_20)          // 设置 item 文件名字体大小
+                                .setTitleTextColor(Color.RED)             // 设置 item 文件名字体颜色
+                                .setTitleTextBold(true)                   // 设置 item 文件名字体粗细
+                                .setImageWidth(R.dimen.dp_50)             // 设置 item 文件扩展类型图片宽度
+                                .setImageHeight(R.dimen.dp_50)            // 设置 item 文件扩展类型图片高度
+                                .setImageMarginRight(R.dimen.dp_50)       // 设置 item 文件扩展类型图片右边间距
+                                .setCountTextColor(Color.RED)             // 设置 item 文件个数字体颜色
+                                .setCountTextSize(R.dimen.sp_20)          // 设置 item 文件个数字体大小
+                                .setCountTextBold(true)                   // 设置 item 文件个数字体粗细
+                                .setDateTextSize(R.dimen.sp_20)           // 设置 item 文件日期字体大小
+                                .setDateTextColor(Color.RED)              // 设置 item 文件日期字体颜色
+                                .setDateTextBold(true)                    // 设置 item 文件日期字体粗细
+                                .setLayoutBackgroundColor(Color.RED)      // 设置 item 背景颜色
+                                .setLayoutPadding(R.dimen.dp_1, R.dimen.dp_1, R.dimen.dp_1, R.dimen.dp_1) // 设置 item 边距
+                                .setSplitLineColor(Color.RED)             // 设置 item 的文件个数与日期之间分割线的颜色
+                                .setSplitLineHeight(R.dimen.dp_10)        // 设置 item 的文件个数与日期之间分割线的高度
+                                .setSplitLineWidth(R.dimen.dp_10)         // 设置 item 的文件个数与日期之间分割线的宽度
+                                .setSplitLineMarginLeft(R.dimen.dp_50)    // 设置 item 的文件个数与日期之间分割线的左间距
+                                .setSplitLineMarginRight(R.dimen.dp_50)   // 设置 item 的文件个数与日期之间分割线的右间距
                 )
-                .setMultiSelectionModel(true)                               // 设置是否为多选模式
-//                .setMultiModelMaxSize(3)                                  // 设置多选模式时最多可选中文件的个数
-//                .setMultiModelToast(true, "最多只能选择3个文件")          // 设置多选模式选择数量达到上限值时是否需要 Toast 提示
-//                .setFileSizeProvide(FileSizeProvide fileSizeProvide)      // 设置文件个数处的自定义文本样式
-//                .setFileIconProvide(FileIconProvide fileIconProvide)      // 设置文件扩展类型图片自定义提供器
-//                .setFileDateProvide(FileDateProvide fileDateProvide)      // 设置文件日期格式化样式自定义提供器
-//                .setFileFilter(FileFilter fileFilter)                     // 设置自动以文件顾虑器
-//                .setFileOrderProvide(FileOrderProvide fileOrderProvide)   // 设置文件排序比较器
-//                .setHeadTopLineVisibility(View.VISIBLE)                   // 设置列表顶部路径栏上边的横线
-//                .setHeadTopLineColor(Color.RED)                           // 设置列表顶部路径栏上边横线颜色
-//                .setHeadTopLineHeight(R.dimen.dp_30)                      // 设置列表顶部路径栏上边横线高度
-//                .setHeadTopLineHeightDP(30)                               // 同上
-//                .setHeadTopLineHeightPX(30)                               // 同上
-//                .setHeadTopLineMargin(R.dimen.dp_10, R.dimen.dp_10,R.dimen.dp_10,R.dimen.dp_10) // 设置列表顶部路径栏上边横线边距
-//                .setHeadTopLineMarginDP(10,10,10,10)                      // 同上
-//                .setHeadTopLineMarginPX(10,10,10,10)                      // 同上
-//                .setHeadBottomLineVisibility(View.VISIBLE)                // 设置类表顶部路径栏下边的横线
-//                .setHeadBottomLineColor(@ColorInt int color)              // 设置类表顶部路径栏下边横线的颜色
-//                .setHeadBottomLineHeight(@DimenRes int resId)             // 设置类表顶部路径栏下边横线的高度
-//                .setHeadBottomLineHeightDP(float dpHeight)                // 同上
-//                .setHeadBottomLineHeightPX(float pxHeight)                // 同上
-//                .setHeadBottomLineMargin(@DimenRes int leftDimenRes, @DimenRes int topDimenRes, @DimenRes int rightDimenRes, @DimenRes int bottomDimenRes)
-//                .setHeadBottomLineMarginDP(float leftDP, float topDP, float rightDP, float bottomDP)
-//                .setHeadBottomLineMarginPX(float leftPX, float topPX, float rightPX, float bottomPX)
-//                .setHeadRootHeight(R.dimen.dp_40)                         // 设置列表顶部路栏高度
-//                .setHeadRootHeightDP(40)                                  // 同上
-//                .setHeadRootHeightPX(120)                                 // 同上
-//                .setHeadRootPadding(R.dimen.dp_20,R.dimen.dp_1,R.dimen.dp_30,R.dimen.dp_1)        // 设置列表顶部路栏内容边距
-//                .setHeadRootPaddingDP(float leftDP, float topDP, float rightDP, float bottomDP)   // 同上
-//                .setHeadRootPaddingPX(float leftPX, float topPX, float rightPX, float bottomPX)   // 同上
-//                .setHeadRootBackgroundColor(Color.RED)                    // 设置列表顶部路栏背景颜色
-//                .setHeadRootBackgroundResource(@DrawableRes int resId)    // 设置列表顶部路栏背景资源
-//                .setHeadLeftTextSize(R.dimen.sp_20)                       // 设置列表顶部路栏左边路径字体大小
-//                .setHeadLeftTextSizePX(60)                                // 同上
-//                .setHeadLeftTextSizeSP(20)                                // 同上
-//                .setHeadLeftTextColor(Color.RED)                          // 设置列表顶部路栏左边路径字体颜色
-//                .setHeadLeftTextColor(ColorStateList colors)              // 同上
-//                .setHeadLeftTextBold(true)                                // 设置列表顶部路栏左边路径字体粗细
-//                .setHeadLeftTextEllipsize(TextUtils.TruncateAt.MARQUEE)   // 设置列表顶部路栏左边路径字体省略模式
-//                .setHeadRightImage(Drawable leftDrawable)                 // 设置列表顶部路栏右边返回按钮左边的图片资源
-//                .setHeadRightImageDP(Drawable leftDrawable, float widthDP, float heightDP) // 同上
-//                .setHeadRightImagePX(Drawable leftDrawable, float widthPX, float heightPX) // 同上
-//                .setHeadRightText(@StringRes int resId)                   // 设置列表顶部路栏右边返回按钮的文本
-//                .setHeadRightText("上一级")                               // 同上
-//                .setHeadRightTextSize(@DimenRes int resId)                // 设置列表顶部路栏右边返回按钮的字体大小
-//                .setHeadRightTextSizePX(float px)                         // 同上
-//                .setHeadRightTextSizeSP(20)                               // 同上
-//                .setHeadRightTextColor(Color.RED)                         // 设置列表顶部路栏右边返回按钮的字体颜色
-//                .setHeadRightTextColor(ColorStateList colors)             // 同上
-//                .setHeadRightTextBold(true)                               // 设置列表顶部路栏右边返回按钮的字体粗细
-//                .setHeadRightTextBackgroundColor(Color.RED)               // 设置列表顶部路栏右边返回按钮的背景
-//                .setHeadRightTextBackgroundResource(@DrawableRes int resId)// 同上
-//                .setRecyclerViewLineDecoration(RecyclerView.ItemDecoration itemDecoration) // 设置列表的 item 分割线提供器
-//                .setRecyclerViewLineColorHeight(Color.RED, R.dimen.dp_1, R.dimen.dp_5)     // 同上
-//                .setRecyclerViewLineColorHeightDP(@ColorInt int color, float heightDP, float marginDP) // 同上
-//                .setRecyclerViewLineColorHeightPX(@ColorInt int color, float heightPX, float marginPX) // 同上
-//                .setRecyclerViewBackgroundColor(Color.GRAY)                   // 设置列表背景颜色
-//                .setRecyclerViewBackgroundResource(@DrawableRes int resId)    // 设置列表背景资源
-//                .setEmptyText(@StringRes int resId)                           // 设置无数据界面的提示文本
-//                .setEmptyText("无数据")                                       // 同上
-//                .setEmptyTextColor(Color.RED)                                 // 设置无数据界面的提示文本的颜色
-//                .setEmptyTextColor(ColorStateList colors)                     // 同上
-//                .setEmptyTextSize(@DimenRes int resId)                        // 设置无数据界面的提示文本字体大小
-//                .setEmptyTextSizePX(float px)                                 // 同上
-//                .setEmptyTextSizeSP(float sp)                                 // 同上
-//                .setEmptyTopImage(@DrawableRes int topDrawableResId)          // 设置无数据界面的提示文本的顶部图片资源
-//                .setEmptyTopImage(Drawable topDrawable)                       // 同上
-//                .setEmptyTopImage(@DrawableRes int topDrawableResId, @DimenRes int widthResId, @DimenRes int heightResId)
-//                .setEmptyTopImageDP(Drawable topDrawable, float widthDP, float heightDP)
-//                .setEmptyTopImagePX(Drawable topDrawable, float widthPX, float heightPX)
-//                .setSubmitTextViewHeight(@DimenRes int resId)                 // 多选模式，设置确定按钮控件的高度
-//                .setSubmitTextViewHeightDP(float dpHeight)                    // 同上
-//                .setSubmitTextViewHeightPX(float pxHeight)                    // 同上
-//                .setSubmitText(@StringRes int resId)                          // 多选模式，设置确定按钮的文本
-//                .setSubmitText("ok")                                          // 同上
-//                .setSubmitTextColor(@ColorInt int color)                      // 多选模式，设置确定按钮的字体颜色
-//                .setSubmitTextColor(ColorStateList colors)                    // 同上
-//                .setSubmitTextSize(@DimenRes int resId)                       // 多选模式，设置确定按钮的字体大小
-//                .setSubmitTextSizePX(float px)                                // 同上
-//                .setSubmitTextSizeSP(float sp)                                // 同上
-//                .setSubmitTextBold(boolean isBold)                            // 多选模式，设置确定按钮的字体粗细
-//                .setSubmitViewBackgroundColor(Color.RED)                      // 多选模式，设置确定按钮的背景颜色
-//                .setSubmitViewBackgroundResource(@DrawableRes int resId)      // 多选模式，设置确定按钮的背景资源
-                .setup();                                                       // 生效设置，最后必须调用，否则 UI 界面无数据。
+                .setMultiSelectionModel(true)                             // 设置是否为多选模式
+                .setMultiModelMaxSize(3)                                  // 设置多选模式时最多可选中文件的个数
+                .setMultiModelToast(true, "最多只能选择3个文件")          // 设置多选模式选择数量达到上限值时是否需要 Toast 提示
+                .setFileSizeProvide(FileSizeProvide fileSizeProvide)      // 设置文件个数处的自定义文本样式
+                .setFileIconProvide(FileIconProvide fileIconProvide)      // 设置文件扩展类型图片自定义提供器
+                .setFileDateProvide(FileDateProvide fileDateProvide)      // 设置文件日期格式化样式自定义提供器
+                .setFileFilter(FileFilter fileFilter)                     // 设置自动以文件顾虑器
+                .setFileOrderProvide(FileOrderProvide fileOrderProvide)   // 设置文件排序比较器
+                .setHeadTopLineVisibility(View.VISIBLE)                   // 设置列表顶部路径栏上边的横线
+                .setHeadTopLineColor(Color.RED)                           // 设置列表顶部路径栏上边横线颜色
+                .setHeadTopLineHeight(R.dimen.dp_30)                      // 设置列表顶部路径栏上边横线高度
+                .setHeadTopLineHeightDP(30)                               // 同上
+                .setHeadTopLineHeightPX(30)                               // 同上
+                .setHeadTopLineMargin(R.dimen.dp_10, R.dimen.dp_10,R.dimen.dp_10,R.dimen.dp_10) // 设置列表顶部路径栏上边横线边距
+                .setHeadTopLineMarginDP(10,10,10,10)                      // 同上
+                .setHeadTopLineMarginPX(10,10,10,10)                      // 同上
+                .setHeadBottomLineVisibility(View.VISIBLE)                // 设置类表顶部路径栏下边的横线
+                .setHeadBottomLineColor(@ColorInt int color)              // 设置类表顶部路径栏下边横线的颜色
+                .setHeadBottomLineHeight(@DimenRes int resId)             // 设置类表顶部路径栏下边横线的高度
+                .setHeadBottomLineHeightDP(float dpHeight)                // 同上
+                .setHeadBottomLineHeightPX(float pxHeight)                // 同上
+                .setHeadBottomLineMargin(@DimenRes int leftDimenRes, @DimenRes int topDimenRes, @DimenRes int rightDimenRes, @DimenRes int bottomDimenRes)
+                .setHeadBottomLineMarginDP(float leftDP, float topDP, float rightDP, float bottomDP)
+                .setHeadBottomLineMarginPX(float leftPX, float topPX, float rightPX, float bottomPX)
+                .setHeadRootHeight(R.dimen.dp_40)                         // 设置列表顶部路栏高度
+                .setHeadRootHeightDP(40)                                  // 同上
+                .setHeadRootHeightPX(120)                                 // 同上
+                .setHeadRootPadding(R.dimen.dp_20,R.dimen.dp_1,R.dimen.dp_30,R.dimen.dp_1)        // 设置列表顶部路栏内容边距
+                .setHeadRootPaddingDP(float leftDP, float topDP, float rightDP, float bottomDP)   // 同上
+                .setHeadRootPaddingPX(float leftPX, float topPX, float rightPX, float bottomPX)   // 同上
+                .setHeadRootBackgroundColor(Color.RED)                    // 设置列表顶部路栏背景颜色
+                .setHeadRootBackgroundResource(@DrawableRes int resId)    // 设置列表顶部路栏背景资源
+                .setHeadLeftTextSize(R.dimen.sp_20)                       // 设置列表顶部路栏左边路径字体大小
+                .setHeadLeftTextSizePX(60)                                // 同上
+                .setHeadLeftTextSizeSP(20)                                // 同上
+                .setHeadLeftTextColor(Color.RED)                          // 设置列表顶部路栏左边路径字体颜色
+                .setHeadLeftTextColor(ColorStateList colors)              // 同上
+                .setHeadLeftTextBold(true)                                // 设置列表顶部路栏左边路径字体粗细
+                .setHeadLeftTextEllipsize(TextUtils.TruncateAt.MARQUEE)   // 设置列表顶部路栏左边路径字体省略模式
+                .setHeadRightImage(Drawable leftDrawable)                 // 设置列表顶部路栏右边返回按钮左边的图片资源
+                .setHeadRightImageDP(Drawable leftDrawable, float widthDP, float heightDP) // 同上
+                .setHeadRightImagePX(Drawable leftDrawable, float widthPX, float heightPX) // 同上
+                .setHeadRightText(@StringRes int resId)                   // 设置列表顶部路栏右边返回按钮的文本
+                .setHeadRightText("上一级")                               // 同上
+                .setHeadRightTextSize(@DimenRes int resId)                // 设置列表顶部路栏右边返回按钮的字体大小
+                .setHeadRightTextSizePX(float px)                         // 同上
+                .setHeadRightTextSizeSP(20)                               // 同上
+                .setHeadRightTextColor(Color.RED)                         // 设置列表顶部路栏右边返回按钮的字体颜色
+                .setHeadRightTextColor(ColorStateList colors)             // 同上
+                .setHeadRightTextBold(true)                               // 设置列表顶部路栏右边返回按钮的字体粗细
+                .setHeadRightTextBackgroundColor(Color.RED)               // 设置列表顶部路栏右边返回按钮的背景
+                .setHeadRightTextBackgroundResource(@DrawableRes int resId)// 同上
+                .setRecyclerViewLineDecoration(RecyclerView.ItemDecoration itemDecoration) // 设置列表的 item 分割线提供器
+                .setRecyclerViewLineColorHeight(Color.RED, R.dimen.dp_1, R.dimen.dp_5)     // 同上
+                .setRecyclerViewLineColorHeightDP(@ColorInt int color, float heightDP, float marginDP) // 同上
+                .setRecyclerViewLineColorHeightPX(@ColorInt int color, float heightPX, float marginPX) // 同上
+                .setRecyclerViewBackgroundColor(Color.GRAY)                   // 设置列表背景颜色
+                .setRecyclerViewBackgroundResource(@DrawableRes int resId)    // 设置列表背景资源
+                .setEmptyText(@StringRes int resId)                           // 设置无数据界面的提示文本
+                .setEmptyText("无数据")                                       // 同上
+                .setEmptyTextColor(Color.RED)                                 // 设置无数据界面的提示文本的颜色
+                .setEmptyTextColor(ColorStateList colors)                     // 同上
+                .setEmptyTextSize(@DimenRes int resId)                        // 设置无数据界面的提示文本字体大小
+                .setEmptyTextSizePX(float px)                                 // 同上
+                .setEmptyTextSizeSP(float sp)                                 // 同上
+                .setEmptyTopImage(@DrawableRes int topDrawableResId)          // 设置无数据界面的提示文本的顶部图片资源
+                .setEmptyTopImage(Drawable topDrawable)                       // 同上
+                .setEmptyTopImage(@DrawableRes int topDrawableResId, @DimenRes int widthResId, @DimenRes int heightResId)
+                .setEmptyTopImageDP(Drawable topDrawable, float widthDP, float heightDP)
+                .setEmptyTopImagePX(Drawable topDrawable, float widthPX, float heightPX)
+                .setSubmitTextViewHeight(@DimenRes int resId)                 // 多选模式，设置确定按钮控件的高度
+                .setSubmitTextViewHeightDP(float dpHeight)                    // 同上
+                .setSubmitTextViewHeightPX(float pxHeight)                    // 同上
+                .setSubmitText(@StringRes int resId)                          // 多选模式，设置确定按钮的文本
+                .setSubmitText("ok")                                          // 同上
+                .setSubmitTextColor(@ColorInt int color)                      // 多选模式，设置确定按钮的字体颜色
+                .setSubmitTextColor(ColorStateList colors)                    // 同上
+                .setSubmitTextSize(@DimenRes int resId)                       // 多选模式，设置确定按钮的字体大小
+                .setSubmitTextSizePX(float px)                                // 同上
+                .setSubmitTextSizeSP(float sp)                                // 同上
+                .setSubmitTextBold(boolean isBold)                            // 多选模式，设置确定按钮的字体粗细
+                .setSubmitViewBackgroundColor(Color.RED)                      // 多选模式，设置确定按钮的背景颜色
+                .setSubmitViewBackgroundResource(@DrawableRes int resId)      // 多选模式，设置确定按钮的背景资源
+                .setup();                                                     // 生效设置，最后必须调用，否则 UI 界面无数据。
 
 
