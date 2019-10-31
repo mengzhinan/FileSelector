@@ -1,6 +1,7 @@
 package com.duke.fileselector;
 
 import android.os.Bundle;
+import android.os.Environment;
 import android.widget.Toast;
 
 import com.duke.dfileselector.activity.BasePermissionActivity;
@@ -30,6 +31,8 @@ public class Demo3Activity extends BasePermissionActivity {
                 Toast.makeText(Demo3Activity.this, "选中文件个数： size = " + (list == null ? 0 : list.size()), Toast.LENGTH_SHORT).show();
                 Demo3Activity.this.finish();
             }
-        }).setup();
+        })
+                .setDefaultFile(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS))
+                .setup();
     }
 }

@@ -3,6 +3,7 @@ package com.duke.dfileselector.widget;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.LinearLayoutManager;
+import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -57,6 +58,8 @@ public class FileSelectorLayout extends RelativeLayout implements View.OnClickLi
     private boolean isNeedToastIfOutOfMaxSize;
     private String toastStringIfOutOfMaxSize;
 
+    private File defaultFile;
+
     private FileSizeProvide fileSizeProvide;
     private FileIconProvide fileIconProvide;
     private FileDateProvide fileDateProvide;
@@ -97,6 +100,17 @@ public class FileSelectorLayout extends RelativeLayout implements View.OnClickLi
 
     public void setFileDateProvide(FileDateProvide fileDateProvide) {
         this.fileDateProvide = fileDateProvide;
+    }
+
+    public void setDefaultFile(String defaultFilePath) {
+        if (TextUtils.isEmpty(defaultFilePath)) {
+            return;
+        }
+        setDefaultFile(new File(defaultFilePath));
+    }
+
+    public void setDefaultFile(File defaultFile) {
+        this.defaultFile = defaultFile;
     }
 
     public void setFileFilter(FileFilter fileFilter) {
@@ -211,12 +225,15 @@ public class FileSelectorLayout extends RelativeLayout implements View.OnClickLi
     }
 
     private void initData() {
-        File rootFile = FileUtils.getRootFile();
-        if (rootFile == null) {
+        File openFile = defaultFile;
+        if (openFile == null) {
+            openFile = FileUtils.getRootFile();
+        }
+        if (openFile == null) {
             refreshUI("unknown", null);
             return;
         }
-        refreshUI(rootFile.getAbsolutePath(), FileSelectorUtils.parseToFileItemList(rootFile.listFiles(getFileFilter())));
+        refreshUI(openFile.getAbsolutePath(), FileSelectorUtils.parseToFileItemList(openFile.listFiles(getFileFilter())));
     }
 
     @Override

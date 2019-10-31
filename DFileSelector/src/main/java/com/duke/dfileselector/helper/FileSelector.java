@@ -25,6 +25,7 @@ import com.duke.dfileselector.util.SizeUtils;
 import com.duke.dfileselector.widget.FileSelectorLayout;
 import com.duke.dfileselector.widget.RecycleViewDivider;
 
+import java.io.File;
 import java.io.FileFilter;
 import java.util.ArrayList;
 
@@ -172,6 +173,28 @@ public class FileSelector {
             return this;
         }
         selectorLayout.setFileFilter(fileFilter);
+        return this;
+    }
+
+    /**
+     * 设置默认路径
+     *
+     * @param defaultFilePath
+     * @return
+     */
+    public FileSelector setDefaultFile(String defaultFilePath) {
+        selectorLayout.setDefaultFile(defaultFilePath);
+        return this;
+    }
+
+    /**
+     * 设置默认路径
+     *
+     * @param defaultFile
+     * @return
+     */
+    public FileSelector setDefaultFile(File defaultFile) {
+        selectorLayout.setDefaultFile(defaultFile);
         return this;
     }
 
