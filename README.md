@@ -145,4 +145,6 @@ FileSelector.with(fileSelectorLayout) <br/>
 //                .setSubmitTextBold(boolean isBold) <br/>
 //                .setSubmitViewBackgroundColor(Color.RED) <br/>
 //                .setSubmitViewBackgroundResource(@DrawableRes int resId) <br/>
+//                添加设置默认路径方法
+//                .setDefaultFile(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS)) <br />
                 .setup(); <br/>
